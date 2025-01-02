@@ -27,11 +27,11 @@ jobs:
         run: bun run build
 
       - name: Check build output
-        run: ls -l build
+        run: ls -l out
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages  # the branch to deploy to
-          folder: build     # the folder to deploy
+          folder: out     # the folder to deploy
           token: ${{ secrets.GITHUB_TOKEN }}
