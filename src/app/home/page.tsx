@@ -1,19 +1,16 @@
 "use client"
 import Aurora from "@/Backgrounds/Aurora/Aurora";
-import CustomCursor from "@/components/CustomCursor";
 import { Button } from "@heroui/react";
 import { useState } from "react";
 
 export default function Home() {
-  const [isHovering, setIsHovering] = useState(false);
+    const [, setIsHovering] = useState(false);
 
-  const handleEmail = () => {
-    window.location.href = `mailto:nattawat.nattachanasit@gmail.com`;
-  };
-  return (
-    <>
-      <CustomCursor isHovering={isHovering} />
-      <section id="home" className="w-full h-screen flex items-center justify-center">
+    const handleEmail = () => {
+      window.location.href = `mailto:nattawat.nattachanasit@gmail.com`;
+    };
+    return (
+        <section id="home" className="w-full h-screen flex items-center justify-center">
         <div className="w-full h-full text-white">
           <div className="relative overflow-hidden items-center justify-center w-full h-full max-w-full max-h-full">
             <div className="fixed h-full w-full">
@@ -54,6 +51,5 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </>
-  );
+    )
 }

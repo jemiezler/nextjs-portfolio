@@ -27,7 +27,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <div className="font-[family-name:var(--font-geist-sans)] w-screen h-screen max-w-screen max-h-screen">
         {children}
+        </div>
+        
       </body>
     </html>
   );
